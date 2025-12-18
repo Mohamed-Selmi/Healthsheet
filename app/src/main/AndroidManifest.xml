@@ -12,10 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthSheet">
         <activity
+            android:name=".HealthInformation"
+            android:exported="false" />
+        <activity
+            android:name=".LogHistory"
+            android:exported="false" />
+        <activity
+            android:name=".CaloriesLogScreen"
+            android:exported="false" />
+        <activity
             android:name=".UserProfileScreen"
             android:exported="false" />
         <activity
-            android:name=".BodyFatCalculatorScreen"
+            android:name=".BodyMeasurements"
             android:exported="false" />
         <activity
             android:name=".LoginScreen"

@@ -1,5 +1,6 @@
 package com.example.healthsheet;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteConstraintException;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,7 @@ public class RegisterScreen extends AppCompatActivity {
         this.email=(EditText) this.findViewById(R.id.emailInput);
         this.username=(EditText) this.findViewById(R.id.usernameinput);
         this.password=(EditText) this.findViewById(R.id.passwordInput);
+        login=(Button) this.findViewById(R.id.loginR);
         userManager=new UserManager(this);
         try{
             //userManager.openToWrite(DataBaseHelper.DB_NAME)
@@ -73,7 +75,10 @@ public class RegisterScreen extends AppCompatActivity {
                     }
                 }
         );
-        //login.setOnClickListener();
+      login.setOnClickListener(v -> {
+            Intent login=new Intent(getApplicationContext(),LoginScreen.class);
+            startActivity(login);
+        });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

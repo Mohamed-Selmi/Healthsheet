@@ -22,4 +22,11 @@
     <string name="BodyFatPercentage">Body fat percentage:</string>
     <string name="logout">Logout</string>
     <string name="customizeProfile">Customize profile</string>
+    <string name="calories">calorie amount:</string>
+    <string name="save">Save</string>
+    <string name="profile">User Profile</string>
+    <string name="diary">Diary</string>
+    <string name="history">History</string>
+    <string name="Bodyfat">Body fat</string>
+    <string name="Health">Health</string>
 </resources>

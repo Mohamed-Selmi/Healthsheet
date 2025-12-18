@@ -175,14 +175,15 @@
         android:text="@string/accountHolder"
         android:textSize="24sp"
         android:layout_marginTop="10dp"/>
-    <TextView
+    <Button
         android:id="@+id/loginR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
+
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        android:textColor="@color/lightBlue"
+        android:textColor="@color/white"
         android:layout_marginTop="10dp"/>
 
 </LinearLayout>

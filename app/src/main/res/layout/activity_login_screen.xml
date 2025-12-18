@@ -83,7 +83,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/register"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_marginTop="40dp"
         android:text="@string/login"
@@ -101,7 +101,7 @@
         android:layout_marginTop="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/register" />
+        app:layout_constraintTop_toBottomOf="@id/login" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
             android:text="@string/notAccountHolder"
             android:textSize="24sp"
             android:layout_marginTop="15dp"/>
-        <TextView
+        <Button
             android:id="@+id/RegisterL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
