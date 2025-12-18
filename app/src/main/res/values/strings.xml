@@ -1,9 +1,25 @@
 <resources>
     <string name="app_name">HealthSheet</string>
-    <string name="login">Login</string>
+    <string name="login"><u>Login</u></string>
     <string name="register">Register</string>
     <string name="Banner">Welcome to HealthSheet</string>
-    <string name="username">Username</string>
-    <string name="email">Email</string>
+    <string name="username">Username:</string>
+    <string name="email">Email:</string>
     <string name="password">Password:</string>
+    <string name="mailHint">Type your email</string>
+    <string name="nameHint">Type your username</string>
+    <string name="passwordHint">Type your password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="accountHolder">Already have an account?</string>
+    <string name="notAccountHolder">Don\'t have an account?</string>
+    <string name="waist">Waist:</string>
+    <string name="neck">Neck:</string>
+    <string name="hip">Hip:</string>
+    <string name="Age">Age:</string>
+    <string name="Height">Height:</string>
+    <string name="Calculate">Calculate:</string>
+    <string name="BodyFatPercentage">Body fat percentage:</string>
+    <string name="logout">Logout</string>
+    <string name="customizeProfile">Customize profile</string>
 </resources>

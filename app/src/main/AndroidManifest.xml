@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthSheet">
         <activity
+            android:name=".UserProfileScreen"
+            android:exported="false" />
+        <activity
+            android:name=".BodyFatCalculatorScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LoginScreen"
+            android:exported="false" />
+        <activity
             android:name=".RegisterScreen"
             android:exported="true">
             <intent-filter>
