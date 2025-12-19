@@ -39,6 +39,7 @@ public class UserManager {
         content.put(DataBaseHelper.USER_EMAIL,user.getEmail());
         content.put(DataBaseHelper.USER_NAME,user.getUsername());
         content.put(DataBaseHelper.USER_PASSWORD,user.getPassword());
+        //content.put(DataBaseHelper.USER_GENDER,"male");//user.getGender());
         return database.insert(USER_TABLE,null,content);
     }
     //I need to change this to OOP later, gonna be a long night!

@@ -73,7 +73,7 @@
 
     <LinearLayout
         android:id="@+id/navbar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:orientation="horizontal"
@@ -82,29 +82,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/saveCalories"
         app:layout_constraintBottom_toBottomOf="parent">
-
-        <Button
+        <ImageButton
             android:id="@+id/diary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
-            android:text="@string/diary"
+            android:layout_weight="0.2"
+            android:background="@color/lightBlue"
+            android:layout_margin="2dp"
+            android:src="@drawable/utensils_solid_full"
             />
 
-        <Button
+        <ImageButton
             android:id="@+id/bodyfat"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
-            android:text="@string/Bodyfat"
-
+            android:layout_weight="0.2"
+            android:layout_margin="2dp"
+            android:src="@drawable/weight_scale_solid_full"
+            android:background="@color/lightBlue"
             app:layout_constraintBottom_toBottomOf="parent" />
 
         <ImageButton
             android:id="@+id/healthinfo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
+            android:layout_weight="0.2"
+            android:layout_margin="2dp"
             android:src="@drawable/heart_solid_full"
             android:background="@color/lightBlue"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -114,7 +117,8 @@
             android:id="@+id/history"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
+            android:layout_weight="0.2"
+            android:layout_margin="2dp"
             android:src="@drawable/history"
             android:background="@color/lightBlue"
              />
@@ -123,8 +127,10 @@
             android:id="@+id/profile"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
+            android:layout_weight="0.2"
+            android:layout_margin="2dp"
             android:src="@drawable/user_solid_full"
+            android:background="@color/lightBlue"
             app:layout_constraintTop_toBottomOf="@id/saveCalories" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

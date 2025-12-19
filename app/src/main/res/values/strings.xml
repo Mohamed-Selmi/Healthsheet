@@ -14,7 +14,7 @@
     <string name="accountHolder">Already have an account?</string>
     <string name="notAccountHolder">Don\'t have an account?</string>
     <string name="waist">Waist:</string>
-    <string name="neck">Neck:</string>
+    <string name="age">age:</string>
     <string name="hip">Hip:</string>
     <string name="Age">Age:</string>
     <string name="Height">Height:</string>
@@ -29,4 +29,8 @@
     <string name="history">History</string>
     <string name="Bodyfat">Body fat</string>
     <string name="Health">Health</string>
+    <string name="weight">weight:</string>
+    <string name="update">update</string>
+    <string name="dontUpdate">Don\'t wish to update?</string>
+    <string name="goBack">return</string>
 </resources>

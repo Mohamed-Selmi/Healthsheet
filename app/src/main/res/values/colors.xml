@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="amethyst">#3a2769</color>
     <color name="lightBlue">#00A5E0</color>
+    <color name="red">#dc143c</color>
 </resources>

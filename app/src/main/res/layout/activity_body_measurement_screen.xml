@@ -18,14 +18,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
     <LinearLayout
         android:id="@+id/layout1"
-        android:layout_width="match_parent"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="24dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@id/layout2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/banner"
         >
         <TextView
@@ -43,23 +46,24 @@
             android:layout_width="0dp"
             android:layout_weight="0.7"
             android:inputType="number"
-            android:layout_height="48dp"
+            android:layout_height="26dp"
             app:layout_constraintStart_toEndOf="@id/hip"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginStart="24dp"
+            app:layout_constraintEnd_toStartOf="@id/waist"
+            android:layout_marginStart="2dp"
             android:background="@drawable/edittextborder"
-            />
 
+            />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/layout2"
-        android:layout_width="match_parent"
+        android:layout_width="170dp"
+
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/layout1"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        app:layout_constraintStart_toEndOf="@id/layout1"
         >
     <TextView
         android:id="@+id/waist"
@@ -76,7 +80,7 @@
         android:layout_width="0dp"
         android:layout_weight="0.7"
         android:inputType="number"
-        android:layout_height="48dp"
+        android:layout_height="26dp"
         app:layout_constraintStart_toEndOf="@id/waist"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="24dp"
@@ -92,24 +96,24 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/layout2"
+        app:layout_constraintTop_toBottomOf="@id/layout1"
         >
         <TextView
-            android:id="@+id/neck"
+            android:id="@+id/age"
             android:layout_width="0dp"
             android:layout_weight="0.3"
             android:layout_height="wrap_content"
-            android:text="@string/neck"
+            android:text="@string/age"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/hip"
             />
         <EditText
-            android:id="@+id/neckInput"
+            android:id="@+id/ageInput"
             android:layout_width="0dp"
             android:layout_weight="0.7"
             android:inputType="number"
-            android:layout_height="48dp"
+            android:layout_height="26dp"
             app:layout_constraintStart_toEndOf="@id/waist"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginStart="24dp"
@@ -118,15 +122,156 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layout3"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="24dp"
+
+        >
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="@string/weight"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hip"
+            />
+        <EditText
+            android:id="@+id/weightInput"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:inputType="number"
+            android:layout_height="26dp"
+            app:layout_constraintStart_toEndOf="@id/waist"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/edittextborder"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="170dp"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+
+        >
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="@string/Height"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hip"
+            />
+        <EditText
+            android:id="@+id/heightInput"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:inputType="number"
+            android:layout_height="26dp"
+            app:layout_constraintStart_toEndOf="@id/waist"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/edittextborder"
+            />
+
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="320dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/layout4" />
     <Button
-        android:id="@+id/register"
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="@string/login"
+        android:text="@string/save"
         android:textSize="24sp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/layout3"
+        app:layout_constraintTop_toBottomOf="@id/calendar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="2.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageButton
+            android:id="@+id/diary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@color/lightBlue"
+            android:layout_margin="2dp"
+            android:src="@drawable/utensils_solid_full"
+            />
+
+        <ImageButton
+            android:id="@+id/bodyfat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_margin="2dp"
+            android:src="@drawable/weight_scale_solid_full"
+            android:background="@color/lightBlue"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageButton
+            android:id="@+id/healthinfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_margin="2dp"
+            android:src="@drawable/heart_solid_full"
+            android:background="@color/lightBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <ImageButton
+            android:id="@+id/history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_margin="2dp"
+            android:src="@drawable/history"
+            android:background="@color/lightBlue"
+            />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_margin="2dp"
+            android:src="@drawable/user_solid_full"
+            android:background="@color/lightBlue"
+            app:layout_constraintTop_toBottomOf="@id/saveCalories" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

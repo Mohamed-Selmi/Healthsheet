@@ -1,10 +1,13 @@
 package com.example.healthsheet;
 
+import static com.example.healthsheet.DataBaseHelper.LOG_ID;
 import static com.example.healthsheet.DataBaseHelper.LOG_TABLE;
+import static com.example.healthsheet.DataBaseHelper.LOG_USER;
 import static com.example.healthsheet.DataBaseHelper.USER_TABLE;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.healthsheet.entities.CalorieLog;
@@ -36,5 +39,12 @@ public class CalorieLogManager {
         content.put(DataBaseHelper.LOG_AMOUNT,calorieLog.getAmount());
         return database.insert(LOG_TABLE,null,content);
     }
-
+    public void deleteLog(CalorieLog calorieLog){
+        database.delete(LOG_TABLE,LOG_ID+"="+calorieLog.getId(),null);
+    }
+    public Cursor fetchHistory(User user){
+        Cursor c;
+        c=database.rawQuery("SELECT id as _id,user,date,calories FROM "+ LOG_TABLE + " where "+ LOG_USER + " = " + user.getId(),null);
+        return c;
+    }
 }
